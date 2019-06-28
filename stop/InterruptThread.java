@@ -1,8 +1,6 @@
 package com.example.thread.stop.demo;
 
 /**
- * @Author: 无双老师【云析学院】
- * @Date: 2019-05-27
  * @Description:
  */
 public class InterruptThread extends Thread {
