@@ -1,8 +1,7 @@
 package com.example.thread.interruption.demo;
 
 /**
- * @Author: 无双老师【云析学院】
- * @Date: 2019-05-18
+ * 
  * @Description: 捕获异常并重新抛出
  */
 public class RethrowInterrupterException {
