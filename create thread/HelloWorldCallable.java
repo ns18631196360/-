@@ -4,8 +4,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * @Author: 无双老师【云析学院】
- * @Date: 2019-05-13
  * @Description: Callable接口创建线程
  */
 public class HelloWorldCallable  {
@@ -33,3 +31,27 @@ public class HelloWorldCallable  {
         }
     }
 }
+
+
+/*
+*或者
+*/
+public class HelloWorldCallable  {
+    public static void mian(String[] args){
+        Callable callable = new Callable(){
+            public T call(){
+                //执行方法
+            }
+        }
+        Futuretask futuretask = new Futuretask(callable);
+        
+        Thread thread = new Thread(futuretask);
+        thread.start();
+        try {
+            T x = futuretask.get();
+        } catch ( InterruptedException e){
+            //处理中断异常
+        } catch (ExcuetionException e){
+            //处理执行异常
+        }
+    }
