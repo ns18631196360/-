@@ -1,8 +1,6 @@
 package com.example.thread.creation.demo.thread;
 
 /**
- * @Author: 无双老师【云析学院】
- * @Date: 2019-05-12
  * @Description: 继承Thread类创建线程
  */
 public class HelloWorldThread extends Thread {
